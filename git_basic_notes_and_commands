@@ -1,0 +1,75 @@
+Git  and Github
+Basic Introduction
+
+1.What is a Version Control Systems?
+Version control , also known as source control ,is tracking and managing software codw changes.
+Famous VCS:
+1.Git (Most Famous)
+2.Apache SubVersion
+3. Piper(Used by Google)
+
+
+Basic git commands 
+for setup
+1. To setup username in a git  -> git config --global user.name "Akash Chand"
+2. To setup useremail in a git -> git config --global user.email "chandakash958@gmail.com"
+
+
+
+Version Controlling with git
+1. To initialize the git -> git init 
+2. To see the hidden folder of git -> ls -la
+3. To add the file / To track the file -> git add "FileName" 
+4. To add all the files of a repository in a version control system use ->git add .
+5. To remove file from git use -> git rm <FILE_PATH>
+6. To see the changes on the tracked files ->  git diff
+7. TO Push the changes on the git use -> git commit -m "Changes added successfully"
+8. To see all the commit history use -> git log
+9. To show the changes in a particular commit -> git commit "<commit id>"
+10. To show the changes done by different coders in a particular file use -> git blame "File Name"
+11. To revert the commit use -> git reset --hard "commit id"
+12. To move the pointer to specific commit use -> git revert "commit id"
+
+
+
+
+There are many git servers present 
+for ex:-
+1.Github
+2.GitLab
+3.BitBucket
+These are used to  maintain server for the local repositories which means it is a kind of central repository which is used to maintain changes in a repository globally
+Github commands
+1. To add the remote repository to your local repository : git remote add origin "url"
+2. To push the changes to the global repository : git push -u origin main
+3. To forcefully update the changes on the github use : git push -f
+
+
+
+
+
+Branching and Merging in Git
+1. Branching is a key feature of Git that lets developers work on separate lines of development, or branches, without affecting the main code.
+2. Git branches are effectively a pointer to a snapshot of your changes.
+Git Branch commands
+1. To see all the branches in a git -> git branch
+2. To create a new branch in a git -> git branch "<branch name>"
+3. To setup your local branch on github use -> git push --set-upstream origin "branch name"
+4. To switch to a different branch use -> git checkout "<branch name>"
+5. To merge the branches on the main branch use -> git merge origin/"<branch name>"
+6. To pull all the neccessary changes from server to local use -> git pull 
+7. To create a new feature and checkout to this branch use -> git checkout -b "feat/feat-b"
+8. To add only specific commit of another branch use -> git cherry-pick "commit-id"
+
+
+Branching name convention
+ for features "feat/add-chat-support"
+ for feature "feat/youtube-integration"
+ for bug "bug/login-not-working"
+ 
+
+
+
+
+
+
